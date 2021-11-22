@@ -32247,18 +32247,37 @@ video {
   content: none;
 }
 
-body{
+body {
   background-color: hsl(7, 99%, 98%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
+header {
   background: url(images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  color: hsl(0, 0%, 100%);
 }
 
-div {
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Fraunces', serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+section div {
   width: 100%;
   height: 700px;
 }
@@ -32289,6 +32308,18 @@ div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+}
+
+.testimonials {
+  width: 75%;
+}
+
+footer {
+  background-color: hsl(168, 34%, 50%);
+}
+
+.social-links img {
+  margin: 10px;
 }
 
 @media (min-width: 640px) {
@@ -188430,4 +188461,3 @@ div {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-

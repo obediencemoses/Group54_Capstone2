@@ -11,31 +11,32 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: rgb(62, 82, 163); }
   </style>
 </head>
 <body>
-  <header>
+  <header class="grid">
     <!-- This will be to create the logo and the nav links and hamburger (mobile).
     This is to ensure that the items are on the same level-->
-    <div class="nav-container">
-      <img src="images/logo.svg" alt="logo">
-      <nav>
-        <a href="#">About</a> 
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <button>Contact</button> 
+    <div class="nav-container text-lg">
+      <img src="images/logo.svg" alt="logo" class="m-6">
+      <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="lg:hidden xl:hidden md:hidden m-6">
+      <nav class="hidden lg:flex md:flex justify-end flex-wrap m-12 header-nav">
+        <a href="#" class="p- m-5">About</a>
+        <a href="#" class="p-0 m-5">Services</a>
+        <a href="#" class="p-0 m-5">Projects</a>
+        <button class="text-black bg-white uppercase m-5 px-5 py-2 rounded-3xl">Contact</button> 
       </nav>
-      <img src="images/icon-hamburger.svg" alt="icon-hamburger">
     </div>
     
-    <h1 class="text-center">We are creatives</h1>
-    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+    <h1 class="text-center uppercase">We are creatives</h1>
+    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="m-auto">
   </header>
-  <main>
+  <main class="grid">
     <!--This will be for the grid-->
-    <section>
+    <section class=" flex flex-col md:grid lg:grid xl:grid grid-cols-2 grid-rows-4">
       <div class="div1">
         <h2>Transform your brand</h2>
 
@@ -70,53 +71,71 @@
         </p> 
       </div>
       <div class="div6">
-        Photography
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
 
+        </p> 
       </div>
-  </section>
-  <!--This one goes for the testimonials-->
-  <div class="container">
-    <h2>Client testimonials</h2>
-    <img src="images/image-emily.jpg" alt="">
-    <p>
-      We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-    </p> 
-    <h4>Emily R.</h4>
-    <p>Marketing Director</p> 
+    </section>
+    <!--This one goes for the testimonials-->
+    <div class="testimonials text-center m-auto">
+      <h2 class="uppercase text-lg">Client testimonials</h2>
+      <div class="md:grid lg:grid xl:grid grid-cols-3 gap-10">
+        <div class=" my-12 content-center grid">
+          <img src="images/image-emily.jpg" alt="image-emily" class="rounded-full m-auto w-16 my-12">
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p> 
+          <h4>Emily R.</h4>
+          <p>Marketing Director</p> 
+        </div>
+        <div class="my-16">
+          <img src="images/image-thomas.jpg" alt="image-thomas" class="rounded-full m-auto w-16 my-12">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <p>Chief Operating Officer</p>
+        </div>
 
-    <img src="images/image-thomas.jpg" alt="">
-    <p>
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-    </p>
-    <h4>Thomas S.</h4>
-    <p>Chief Operating Officer</p>
+        <div>
+          <img src="images/image-jennie.jpg" alt="image-jennie" class="rounded-full m-auto w-16 my-12">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
 
-    <img src="images/image-jennie.jpg" alt="image-jennie" class="rounded-full">
-    <p>
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <p>Business Owner</p> 
+        </div>
+      </div>
+    </div>
+    <!--The gallery comes here-->
+    <div class="gallery hidden md:grid lg:grid xl:grid grid-cols-4">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
+    </div>
+    <div class="gallery grid grid-cols-2 grid-rows-2">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img src="images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img src="images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugarcubes">
+    </div>
 
-    </p>
-    <h4>Jennie F.</h4>
-    <p>Business Owner</p> 
-  </div>
-  <!--The gallery comes here-->
-  <div class="gallery">
-    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
-    <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
-    <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
-    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
-  </div> 
   </main>
-  <footer>
-    <img src="images/logo.svg" alt="logo">
-    <div class="footer-nav">
+  <footer class="grid">
+    <div class="my-12">
+      <img src="images/dark-logo.svg" alt="logo" class="footer-logo m-auto">
+    </div>
+    <div class="footer-nav m-auto">
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Projects</a>
       <a href="#">Contact</a>
     </div> 
-    <div class="social-links">
+    <div class="social-links grid grid-cols-4 grid-rows-1 m-auto">
       <a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
       <a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a>
       <a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
