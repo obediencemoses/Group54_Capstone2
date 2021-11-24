@@ -32269,6 +32269,12 @@ header {
 
 .header-nav button {
   font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.header-nav button:hover {
+  background: hsl(194, 97%, 70%);
+  color: hsl(0, 0%, 100%);
 }
 
 .arrow {
@@ -32338,7 +32344,7 @@ section div {
 }
 
 .testimonials p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 footer {
@@ -32353,6 +32359,10 @@ footer {
   font-family: 'Barlow', sans-serif;
   margin-top: 36px;
   color: hsl(167, 40%, 24%);
+}
+
+.footer-nav a:hover {
+  color:hsl(0, 0%, 100%);
 }
 
 .social-links svg {

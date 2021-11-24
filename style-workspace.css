@@ -26,6 +26,12 @@ header {
 
 .header-nav button {
     font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.header-nav button:hover {
+    background: hsl(194, 97%, 70%);
+    color: hsl(0, 0%, 100%);
 }
 
 .arrow {
@@ -95,7 +101,7 @@ section div {
 }
 
 .testimonials p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 footer {
@@ -113,7 +119,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: hsl(0, 0%, 100%);
+    color:hsl(0, 0%, 100%);
 }
 
 .social-links svg {
@@ -121,7 +127,7 @@ footer {
 }
 
 .hover:hover {
-    fill: ;
+    fill: hsl(0, 0%, 100%);
 }
 
 
