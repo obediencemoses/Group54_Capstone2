@@ -32260,11 +32260,24 @@ header {
   background-size: cover;
   background-position-x: center;
   color: hsl(0, 0%, 100%);
+  height: 100vh;
+}
+
+.header-nav {
+  font-family: 'Barlow', sans-serif;
+}
+
+.header-nav button {
+  font-family: 'Fraunces', serif;
+}
+
+.arrow {
+  margin-top: 8rem;
+  margin-bottom: 25rem;
 }
 
 h1 {
   font-family: 'Fraunces', serif;
-  font-size: 56px;
 }
 
 h2 {
@@ -32312,14 +32325,71 @@ section div {
 
 .testimonials {
   width: 75%;
+  margin-top: 5rem;
+}
+
+.testimonials h2 {
+  color: hsl(232, 10%, 55%);
 }
 
 footer {
-  background-color: hsl(168, 34%, 50%);
+  background-color: hsl(168, 34%, 57%);
+}
+
+.footer-logo {
+  margin-top: 36px;
+}
+
+.footer-nav {
+  font-family: 'Barlow', sans-serif;
+  margin-top: 36px;
+  color: hsl(167, 40%, 24%);
 }
 
 .social-links img {
   margin: 10px;
+}
+
+/* Mobile design */
+
+.mobile-header {
+  background: url(images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.mobile-header .arrow {
+  margin-top: 5.5rem;
+}
+
+.mobile-div1 {
+  background: url(images/mobile/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.mobile-div3 {
+  background: url(images/mobile/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.mobile-div5 {
+  background: url(images/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.mobile-div6 {
+  background: url(images/mobile/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 }
 
 @media (min-width: 640px) {

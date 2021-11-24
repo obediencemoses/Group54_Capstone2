@@ -17,26 +17,46 @@
   </style>
 </head>
 <body>
-  <header class="grid">
+  <header class="hidden md:grid lg:grid xl:grid">
     <!-- This will be to create the logo and the nav links and hamburger (mobile).
     This is to ensure that the items are on the same level-->
-    <div class="nav-container text-lg">
-      <img src="images/logo.svg" alt="logo" class="m-6">
-      <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="lg:hidden xl:hidden md:hidden m-6 float-right">
-      <nav class="hidden float-right lg:flex md:flex justify-end flex-wrap m-12 header-nav">
-        <a href="#" class="p- m-5">About</a>
-        <a href="#" class="p-0 m-5">Services</a>
-        <a href="#" class="p-0 m-5">Projects</a>
+    <div class="text-lg">
+      <img src="images/logo.svg" alt="logo" class=" m-5 md:m-12 lg:m-12 xl:m-12 float-left">
+      <nav class="hidden z-50 float-right lg:flex md:flex justify-end flex-wrap md:m-6 lg:m-6 xl:m-6 header-nav">
+        <a href="#" class="p-5 m-2">About</a>
+        <a href="#" class="p-5 m-2">Services</a>
+        <a href="#" class="p-5 m-2">Projects</a>
         <button class="text-black bg-white uppercase m-5 px-5 py-2 rounded-3xl">Contact</button> 
       </nav>
     </div>
     
-    <h1 class="text-center uppercase">We are creatives</h1>
-    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="m-auto">
+    <h1 class="text-center my-12 uppercase leading-tight text-4xl md:text-6xl lg:text-6xl xl:text-6xl">We are creatives</h1>
+    <div class="grid arrow">
+      <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="m-auto w-8 h-24">
+    </div>
+  </header>
+  <header class="grid mobile-header lg:hidden xl:hidden md:hidden">
+    <!-- This will be to create the logo and the nav links and hamburger (mobile).
+    This is to ensure that the items are on the same level-->
+    <div class="text-lg">
+      <img src="images/logo.svg" alt="logo" class="m-5 float-left">
+      <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="m-6 float-right">
+      <nav class="hidden z-50 float-right">
+        <a href="#" class="p-5 m-2">About</a>
+        <a href="#" class="p-5 m-2">Services</a>
+        <a href="#" class="p-5 m-2">Projects</a>
+        <button class="text-black bg-white uppercase m-5 px-5 py-2 rounded-3xl">Contact</button> 
+      </nav>
+    </div>
+    
+    <h1 class="text-center my-12 uppercase leading-tight text-4xl md:text-6xl lg:text-6xl xl:text-6xl">We are creatives</h1>
+    <div class="grid arrow">
+      <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="m-auto w-8 h-24">
+    </div>
   </header>
   <main class="grid">
     <!--This will be for the grid-->
-    <section class=" flex flex-col md:grid lg:grid xl:grid grid-cols-2 grid-rows-4">
+    <section class="hidden md:grid lg:grid xl:grid grid-cols-2 grid-rows-4">
       <div class="div1">
         <h2>Transform your brand</h2>
 
@@ -78,35 +98,83 @@
         </p> 
       </div>
     </section>
+    <section class="block md:hidden lg:hidden xl:hidden">
+      <div class="mobile-div1 h-80">
+
+      </div>
+      <div class="mobile-div2 h-96">
+        <h2>Transform your brand</h2>
+
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p> 
+
+        <h4>Learn more</h4> 
+      </div>
+      
+      <div class="mobile-div3 h-80">
+        
+      </div>
+      <div class="mobile-div4 h-96">
+        <h2>Stand out to the right audience</h2> 
+
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+        </p> 
+
+        <h4>Learn more</h4> 
+      </div>
+      <div class="mobile-div5 h-screen">
+        <h2>Graphic design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+
+        </p> 
+      </div>
+      <div class="mobile-div6 h-screen">
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+        </p> 
+      </div>
+    </section>
     <!--This one goes for the testimonials-->
-    <div class="testimonials text-center m-auto">
+    <div class="testimonials text-center m-auto my-20 block">
       <h2 class="uppercase text-lg">Client testimonials</h2>
       <div class="md:grid lg:grid xl:grid grid-cols-3 gap-10">
-        <div class=" my-12 content-center grid">
+        <div class="grid">
           <img src="images/image-emily.jpg" alt="image-emily" class="rounded-full m-auto w-16 my-12">
           <p>
             We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-          </p> 
-          <h4>Emily R.</h4>
-          <p>Marketing Director</p> 
+          </p>
+          <div> 
+            <h4>Emily R.</h4>
+            <p>Marketing Director</p>
+          </div> 
         </div>
         <div class="my-16">
           <img src="images/image-thomas.jpg" alt="image-thomas" class="rounded-full m-auto w-16 my-12">
           <p>
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
-          <h4>Thomas S.</h4>
-          <p>Chief Operating Officer</p>
+          <div>
+            <h4>Thomas S.</h4>
+            <p>Chief Operating Officer</p>
+          </div>
         </div>
 
-        <div>
+        <div class="my-16">
           <img src="images/image-jennie.jpg" alt="image-jennie" class="rounded-full m-auto w-16 my-12">
           <p>
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
 
           </p>
-          <h4>Jennie F.</h4>
-          <p>Business Owner</p> 
+          <div>
+            <h4>Jennie F.</h4>
+            <p>Business Owner</p>
+          </div>
         </div>
       </div>
     </div>
@@ -126,16 +194,17 @@
 
   </main>
   <footer class="grid">
-    <div class="my-12 grid">
-      <img src="images/dark-logo.svg" alt="logo" class="footer-logo m-auto">
+    <div class="footer-logo grid">
+      <img src="images/dark-logo.svg" alt="logo" class="footer-logo m-auto w-36">
     </div>
-    <div class="footer-nav m-auto">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </div> 
-    <div class="social-links grid grid-cols-4 grid-rows-1 m-auto">
+    <div class="grid my-5 footer-nav">
+      <div class="m-auto text-lg">
+        <a href="#" class="mx-5">About</a>
+        <a href="#" class="mx-5">Services</a>
+        <a href="#" class="mx-5">Projects</a>
+      </div>
+    </div>
+    <div class="social-links grid grid-cols-4 grid-rows-1 m-auto p-16">
       <a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
       <a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a>
       <a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
