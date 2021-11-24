@@ -112,12 +112,16 @@ footer {
     color: hsl(167, 40%, 24%);
 }
 
+.footer-nav a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
 .social-links svg {
     margin: 10px;
 }
 
 .hover:hover {
-    fill: hsl(0, 0%, 100%);
+    fill: ;
 }
 
 
