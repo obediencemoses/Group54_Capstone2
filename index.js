@@ -1,22 +1,13 @@
-const hamburgerEl = document.getElementsByClassName("hamburger")
+const m_Nav = document.getElementsByClassName("m-nav");
 
-console.log(hamburgerEl)
-
-
-const navliEl = document.getElementsByClassName("nav-ul")[0];
-
-console.log(navliEl)
+function hamclick() {
+    alert(m_Nav)
+}
 
 
-
-
-hamburgerEl.addEventListener("click", ()) =>{
-
-    navliEl.classList.toggle('active')
-
-    console.log("fucntion runned")
-
-    console.log(navliEl)
-
-})
-
+/*
+function hamclick() {
+    
+    alert("Green");
+}
+*/
