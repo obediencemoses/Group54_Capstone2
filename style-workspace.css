@@ -40,6 +40,7 @@ h1 {
 h2 {
     font-size: 24px;
     font-family: 'Fraunces', serif;
+    font-weight: 900;
 }
 
 p {
@@ -85,12 +86,17 @@ section div {
 }
 
 .testimonials {
-    width: 75%;
+    width: 80%;
     margin-top: 5rem;
+    margin-bottom: -5rem;
 }
 
-.testimonials h2 {
+.testimonials .grey {
     color: hsl(232, 10%, 55%);
+}
+
+.testimonials p {
+    font-size: 18px;
 }
 
 footer {
