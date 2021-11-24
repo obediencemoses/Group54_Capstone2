@@ -29,7 +29,7 @@ header {
 }
 
 .arrow {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: 25rem;
 }
 
@@ -109,6 +109,10 @@ footer {
 
 .social-links svg {
     margin: 10px;
+}
+
+.hover:hover {
+    fill: hsl(0, 0%, 100%);
 }
 
 
