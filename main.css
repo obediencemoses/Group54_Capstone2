@@ -32433,6 +32433,10 @@ footer {
   background-position-x: center;
 }
 
+.mobile-div2, .mobile-div4 {
+  height: 400px;
+}
+
 .mobile-div5 {
   background: url(images/mobile/image-graphic-design.jpg);
   background-repeat: no-repeat;
@@ -32445,6 +32449,15 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+}
+
+.mobile-div2 p, .mobile-div4 p {
+  color: hsl(232, 10%, 55%);
+}
+
+.mobile-div5 div, .mobile-div6 div {
+  padding-top: 440px;
+  height: 80px;
 }
 
 @media (min-width: 640px) {
