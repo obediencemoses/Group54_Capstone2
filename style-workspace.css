@@ -58,34 +58,27 @@ button {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Fraunces', serif;
-
 }
 
-/*
-button::after {
-    border-radius:5px;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    top: 13px;  
-    left: 4%;  
-    z-index:-1; 
-    box-sizing:inherit;
-}
-    
-.egg-btn::after { 
-    background-color:rgb(254,242,178); 
+section button {
+    border-bottom: 7px hsl(7, 99%, 70%) solid;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
 
-.egg-btn:hover::after {   
-    background-color: hsl(51, 100%, 49%); 
+.eggbtn {
+    border-bottom: 7px hsl(51, 100%, 49%) solid;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
-        
-.cup-btn::after {
-    background-color:#FFC6BD;    
+
+.eggbtn:hover {
+    border-bottom: 7px hsl(51, 100%, 85%) solid;
 }
-*/
+
+section button:hover {
+    border-bottom: 7px hsl(7, 77%, 74%) solid;
+}
 
 section div { 
     width: 100%;
