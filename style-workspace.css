@@ -110,6 +110,7 @@ section div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    color: hsl(167, 40%, 24%);
 }
 
 
@@ -118,6 +119,7 @@ section div {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    color: hsl(198, 62%, 26%);
 }
 
 .testimonials {
@@ -200,12 +202,14 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    color: hsl(167, 40%, 24%);
 }
 .mobile-div6 {
     background: url(images/mobile/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    color: hsl(198, 62%, 26%);
 }
 
 .mobile-div2 p, .mobile-div4 p {
