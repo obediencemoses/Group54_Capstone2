@@ -17,8 +17,6 @@
   </style>
 </head>
 <body>
-  <script src="index.js"></script>
-
   <header class="hidden md:grid lg:grid xl:grid">
     <!-- This will be to create the logo and the nav links and hamburger (mobile).
     This is to ensure that the items are on the same level-->
@@ -44,13 +42,13 @@
     This is to ensure that the items are on the same level-->
     <div class="text-lg">
       <img src="images/logo.svg" alt="logo" class="m-6 float-left">
-      <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="hamburger m-6 float-right" onclick="hamclick()">
-      <nav class="hidden m-nav z-50 float-right">
-        <a href="#" class="p-5 m-2">About</a>
-        <a href="#" class="p-5 m-2">Services</a>
-        <a href="#" class="p-5 m-2">Projects</a>
-        <button class="text-black bg-white uppercase m-5 px-5 py-2 rounded-3xl">Contact</button> 
-      </nav>
+      <svg class="hamburger m-6 float-right" onclick= hamclick() width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+        <nav id="nav" class="hidden bg-white text-black py-5 left-8 right-8 top-28 z-50 fixed flex-col content-center">
+          <a href="#" class="p-2 m-auto my-2 block">About</a>
+          <a href="#" class="p-2 m-auto my-2 block">Services</a>
+          <a href="#" class="p-2 m-auto my-2 block">Projects</a>
+          <button class="block text-black nav-btn uppercase m-auto my-5 px-5 py-2 rounded-3xl">Contact</button> 
+        </nav>
     </div>
     
     <h1 class="text-center my-12 uppercase leading-tight text-5xl">We are creatives</h1>
@@ -68,7 +66,7 @@
             We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.
           </p> 
-          <button class="my-6 egg-btn">Learn more</button>
+          <button class="my-6 h-7 eggbtn">Learn more</button>
         </div>
       </div>
       <div class="div2">
@@ -84,7 +82,7 @@
           <p class="my-6">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
           </p>
-          <button class="my-6">Learn more</button> 
+          <button class="my-6 h-7">Learn more</button> 
         </div>
       </div>
       <div class="div5">
@@ -117,7 +115,7 @@
             We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.
           </p> 
-          <button class="my-8">Learn more</button>
+          <button class="my-8 h-7 eggbtn">Learn more</button>
         </div> 
       </div>
       
@@ -130,7 +128,7 @@
            <p>
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
           </p> 
-          <button class="my-8">Learn more</button>
+          <button class="my-8 h-7">Learn more</button>
         </div> 
 
          
@@ -234,5 +232,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
