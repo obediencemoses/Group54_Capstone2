@@ -32407,12 +32407,12 @@ footer {
   color: hsl(0, 0%, 100%);
 }
 
-.active {
-  display: block;
-}
-
 .mobile-arrow {
   margin-bottom: 40%;
+}
+
+#nav button {
+  background-color: hsl(51, 100%, 49%);
 }
 
 .mobile-div1 {
